@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from './components/Componente';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         >
           Learn React
         </a>
+        {/* ----------- */}
+        <div>
+          <Componente mono="babuino"/>
+        </div>
       </header>
     </div>
   );
