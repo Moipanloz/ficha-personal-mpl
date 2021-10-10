@@ -6,7 +6,7 @@ import React, {Component} from "react";
 
 // class Componente extends Component {
 //     render(){
-//         return <h2>Hola soy un {mono}</h2>
+//         return <h2>Hola soy un {this.props.mono}</h2>
 //     }
 // }
 
