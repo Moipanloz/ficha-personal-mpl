@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import { Component } from "react";
 import Componente from "../Componente/Componente";
 
@@ -95,10 +96,12 @@ export class EventosPlus extends Component {
     }
 }
 
-const EventosBoton = (props) => {
+function EventosBoton(props) {
     // Para pasarle un evento personalizado, se le pasa el evento como prop y el hijo ejecuta 
     // el prop con el evento JSX
-    <button onClick={props.myOnClick}>Componente Boton</button>
+    return(
+        <button onClick={props.myOnClick}>Componente Boton</button>
+    )
 }
 
 

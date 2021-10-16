@@ -6,6 +6,9 @@ import Estado from './components/Estado/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional/RenderizadoCondicional';
 import RenderizadoLista from './components/RenderizadoLista/RenderizadoLista';
 import {EventosES6, EventosES7, EventosPlus } from './components/Eventos/Eventos';
+import { HijoPadre } from './components/HijoPadre/HijoPadre';
+import { CicloVida } from './components/CicloVida/CicloVida';
+import AjaxApis from './components/AjaxApis/AjaxApis';
 
 
 function App() {
@@ -64,6 +67,18 @@ function App() {
         <hr />
         <div>
           <EventosPlus />
+        </div>
+        <hr />
+        <div>
+          <HijoPadre />
+        </div>
+        <hr />
+        <div>
+          <CicloVida />
+        </div>
+        <hr />
+        <div>
+          <AjaxApis />
         </div>
       </header>
     </div>
