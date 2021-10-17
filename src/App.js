@@ -9,7 +9,9 @@ import {EventosES6, EventosES7, EventosPlus } from './components/Eventos/Eventos
 import { HijoPadre } from './components/HijoPadre/HijoPadre';
 import { CicloVida } from './components/CicloVida/CicloVida';
 import AjaxApis from './components/AjaxApis/AjaxApis';
-
+import ContadorHook from './components/ContadorHook/ContadorHook';
+import ScrollHook from './components/ScrollHook/ScrollHook';
+import RelojHook from './components/RelojHook/RelojHook';
 
 function App() {
   return (
@@ -79,6 +81,18 @@ function App() {
         <hr />
         <div>
           <AjaxApis />
+        </div>
+        <hr />
+        <div>
+          <ContadorHook />
+        </div>
+        <hr />
+        <div>
+          <ScrollHook />
+        </div>
+        <hr />
+        <div>
+          <RelojHook />
         </div>
       </header>
     </div>

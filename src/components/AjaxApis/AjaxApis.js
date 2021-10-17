@@ -37,7 +37,7 @@ function Pokemon(props) {
     return(
         <figure>
             <img src={props.avatar} alt={props.name} />
-            <figcaptin>{props.name}</figcaptin>
+            <span>{props.name}</span>
         </figure>
     )
 }
