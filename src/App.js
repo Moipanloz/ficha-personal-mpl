@@ -12,6 +12,9 @@ import AjaxApis from './components/AjaxApis/AjaxApis';
 import ContadorHook from './components/ContadorHook/ContadorHook';
 import ScrollHook from './components/ScrollHook/ScrollHook';
 import RelojHook from './components/RelojHook/RelojHook';
+import AjaxHook from './components/AjaxHook/AjaxHook';
+import HooksPersonalizados from './components/HooksPersonalizados/HooksPersonalizados';
+import Referencias from './components/Referencias/Referencias';
 
 function App() {
   return (
@@ -93,6 +96,18 @@ function App() {
         <hr />
         <div>
           <RelojHook />
+        </div>
+        <hr />
+        <div>
+          <AjaxHook />
+        </div>
+        <hr />
+        <div>
+          <HooksPersonalizados />
+        </div>
+        <hr />
+        <div>
+          <Referencias />
         </div>
       </header>
     </div>
