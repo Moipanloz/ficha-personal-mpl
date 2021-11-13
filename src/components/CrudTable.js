@@ -1,0 +1,24 @@
+import React from 'react';
+import CrudTableRow from './CrudTableRow';
+
+const CrudTable = (props) => {
+    return(
+        <div>
+            <h3>Tabla</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Color</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {props.data.length === 0 ? <tr><td colSpan="3">Sin datos</td></tr> : props.data.map(el => <CrudTableRow key={el.id} el={el} setDataToEdit={props.setDataToEdit} deleteData={props.deleteData}/>)}
+                </tbody>
+            </table>
+        </div>
+    )
+}
+
+export default CrudTable;

@@ -1,0 +1,14 @@
+$color-sass: #bf4080;
+$color-sass80: #bf408080; //los dos ultimos caracteres son el % de opacidad
+
+
+.bg-sass{
+    background-color: $color-sass;
+    transition: background-color .5s ease-in-out;
+
+    //en vez de crear la clase y luego .clase::hover,
+    //se puede hacer esto con SASS
+    &:hover{
+        background-color: $color-sass80;
+    }
+}
