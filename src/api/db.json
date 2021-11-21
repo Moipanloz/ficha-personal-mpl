@@ -1,0 +1,24 @@
+{
+  "tortugas": [
+    {
+      "id": 1,
+      "color": "rojo",
+      "name": "Rafael"
+    },
+    {
+      "id": 2,
+      "color": "naranja",
+      "name": "Michellangelo"
+    },
+    {
+      "id": 3,
+      "color": "morado",
+      "name": "Donatello"
+    },
+    {
+      "id": 4,
+      "color": "azul",
+      "name": "Leonardo"
+    }
+  ]
+}
