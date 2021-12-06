@@ -1,10 +1,13 @@
 import React from "react";
 import Modal from "./Modal";
 import { useModal } from "../hooks/useModal";
+import ModalPortal from "./ModalPortal";
 
 const Modals = () => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
   const [isOpenModal2, openModal2, closeModal2] = useModal(false);
+  const [isOpenModalPortal, openModalPortal, closeModalPortal] =
+    useModal(false);
 
   return (
     <div>
@@ -17,13 +20,20 @@ const Modals = () => {
           <img src="https://placeimg.com/400/400/animals" alt="Animals" />
         </Modal>
       )}
-      <hr />
       <button onClick={openModal2}>Modal2</button>
-      <Modal isOpen={isOpenModal2} closeModal={closeModal2}>
-        <h3>Modal 2</h3>
-        <p>Hola este es el contenido de mi modal 2</p>
-        <img src="https://placeimg.com/400/400/nature" alt="Nature" />
-      </Modal>
+      {isOpenModal2 && (
+        <Modal isOpen={isOpenModal2} closeModal={closeModal2}>
+          <h3>Modal 2</h3>
+          <p>Hola este es el contenido de mi modal 2</p>
+          <img src="https://placeimg.com/400/400/nature" alt="Nature" />
+        </Modal>
+      )}
+      <button onClick={openModalPortal}>Modal en Portal</button>
+      <ModalPortal isOpen={isOpenModalPortal} closeModal={closeModalPortal}>
+        <h3>Modal Portal</h3>
+        <p>Hola este es el contenido de mi modal en portales</p>
+        <img src="https://placeimg.com/400/400/food" alt="Food" />
+      </ModalPortal>
     </div>
   );
 };
