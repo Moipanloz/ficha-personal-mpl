@@ -1,42 +1,20 @@
 import React from "react";
-import CrudApp from "./components/CrudApp";
 import "./App.css";
-import CrudApi from "./components/CrudApi";
-import SongSearch from "./components/SongSearch";
-import SelectsAnidados from "./components/SelectsAnidados";
-import ContactForm from "./components/ContactForm";
-import Modals from "./components/Modals";
+import Rutas from "./components/Rutas";
 
 function App() {
   return (
     <>
-      <h1>Ejercicios</h1>
+      <h1>Rutas</h1>
+      <a
+        href="https://v5.reactrouter.com/web/guides/quick-start"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Documentacion
+      </a>
       <hr />
-      <div className="ejercicioCard">
-        <Modals />
-      </div>
-      <hr />
-      <div className="ejercicioCard">
-        <ContactForm />
-      </div>
-      <hr />
-      <div className="ejercicioCard">
-        <SelectsAnidados />
-      </div>
-      <hr />
-      <h1>Ejercicios</h1>
-      <div className="ejercicioCard">
-        <SongSearch />
-      </div>
-      <hr />
-      <h1>Ejercicios</h1>
-      <div className="ejercicioCard">
-        <CrudApi />
-      </div>
-      <hr />
-      <div className="ejercicioCard">
-        <CrudApp />
-      </div>
+      <Rutas />
     </>
   );
 }

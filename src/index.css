@@ -1,5 +1,9 @@
-body{
-    background-color: rgb(102, 102, 102);
-    color: white;
-    font-family: sans-serif;
+body {
+  background-color: rgb(102, 102, 102);
+  color: white;
+  font-family: sans-serif;
+}
+
+.active {
+  color: greenyellow;
 }
