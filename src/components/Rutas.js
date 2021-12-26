@@ -9,9 +9,13 @@ import {
 } from "react-router-dom";
 import Acerca from "./Acerca";
 import Contacto from "./Contacto";
+import Dashboard from "./Dashboard";
 import Error404 from "./Error404";
 import Home from "./Home";
+import Login from "./Login";
+import PrivateRoute from "./PrivateRoute";
 import Productos from "./Productos";
+import ReactTopics from "./ReactTopics";
 import Usuario from "./Usuario";
 
 const Rutas = () => {
@@ -76,7 +80,23 @@ const Rutas = () => {
 
         <hr />
 
+        <h2>Rutas anidadas</h2>
+        <NavLink to="/react">
+          <span>React</span>
+        </NavLink>
+
+        <hr />
+
+        <h2>Rutas privadas</h2>
+        <NavLink to="login">Login</NavLink>
+        <NavLink to="dashboard">Dashboard</NavLink>
+
+        <hr />
+
+        <h2>CONTENIDO</h2>
+
         <Routes>
+          <Route exact="true" path="/" element={<Home />} />
           <Route exact="true" path="/about" element={<Acerca />} />
           <Route
             exact="true"
@@ -91,7 +111,17 @@ const Rutas = () => {
           />
           <Route exact="true" path="/usuario/:username" element={<Usuario />} />
           <Route exact="true" path="/productos" element={<Productos />} />
-          <Route exact="true" path="/" element={<Home />} />
+          <Route exact="true" path="/react/*" element={<ReactTopics />} />
+          <Route exact="true" path="/login" element={<Login />} />
+          <Route
+            exact="true"
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            }
+          />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>
